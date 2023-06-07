@@ -1,0 +1,10 @@
+@media (max-width:615px) {
+
+    .container {
+        margin: 34px 0px;
+    }
+
+    th{
+        font-size: 8px;
+    }
+}

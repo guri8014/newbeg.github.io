@@ -1,0 +1,258 @@
+.container1 {
+    background-image: url(R.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 100%; */
+    height: 500px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    /* position: relative; */
+    margin-top: 20px;
+    animation-name: anim;
+    animation-duration: 4s;
+    /* animation-iteration-count: infinite; */
+}
+
+@keyframes anim {
+    0% {
+        background-image: url(R.jpg)
+    }
+
+    25% {
+        background-image: url(backgroundimg.jpg)
+    }
+
+    50% {
+        background-image: url(backgroundimg2.jpg)
+    }
+
+    100% {
+        background-image: url(background3.jpg)
+    }
+}
+
+.conthead {
+    /* text-align: center; */
+    margin: 60px 0px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    /* background-color: grey; */
+    display: grid;
+    place-items: center;
+    overflow-y: hidden;
+    height: 50px;
+}
+
+.conthead h1{
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+}
+
+.conthead h1::before{
+    content: "WHY Study Abroad?";
+    width: 109%;
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: 0.4rem solid black;
+    animation: slide 3s linear infinite;
+    -webkit-animation: slide 2s linear infinite;
+}
+
+
+
+@keyframes slide{
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;
+    }
+    102%{
+        width: 0%;
+    }
+}
+
+
+.container1 span {
+    color: rgb(39, 40, 112);
+    font-size: 45px
+}
+
+.mainhead {
+    font-size: 22px;
+    margin-left: 740px;
+    margin-top: 92px;
+
+    font-size: 22px;
+    /* font-family: 'Cormorant Garamond', serif;
+font-family: 'Mouse Memoirs', sans-serif;
+font-family: 'Mukta', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Roboto Serif', serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+}
+
+.head1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+}
+
+.head2 {
+    font-size: 60px;
+}
+
+.btn1 {
+    background-color: transparent;
+    border: 2px solid;
+    color: white;
+    padding: 8px;
+    margin-left: 75px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.btn1:hover {
+    background-color: rgb(39, 40, 112);
+    color: white;
+}
+
+.bt1 {
+    padding: 8px;
+    margin: 0px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.card{
+    border: none;
+}
+
+.card1,.card2,.card3,.card4{
+    border-bottom: 2px solid;
+}
+
+/* 
+.container2 {
+    background-color: red;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    margin: 12px;
+    display: flex;
+} */
+
+.cards {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.card-text{
+    /* font-family: 'Bebas Neue', cursive;
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Mouse Memoirs', sans-serif;
+font-family: 'Mukta', sans-serif; */
+font-family: 'Noto Sans', sans-serif;
+/* font-family: 'Roboto Mono', monospace;
+font-family: 'Roboto Serif', serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+}
+
+.card-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 28px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.card-title img {
+    margin: 28px 0px;
+}
+
+.card-body {
+    /* background-color: rgb(4, 4, 46); */
+    border-radius: 32px;
+}
+
+.card-body p {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 43px;
+    text-align: center;
+    border-bottom-left-radius: 24px;
+    border-top-right-radius: 32px;
+    border: 1px solid lightblue;
+}
+
+@media (max-width:1145px) {
+    .mainhead {
+        margin-left: 368px;
+    }
+}
+
+@media (max-width:854px) {
+    .mainhead {
+        margin-left: 32px;
+    }
+
+    .head1 {
+        font-size: 17px;
+    }
+
+    .head2 {
+        font-size: 30px;
+    }
+
+    .card-title img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .conthead{
+        height: 45px;
+    }
+}
+
+
+@media (max-width:614px){
+    .conthead{
+        height: 40px;
+    }
+}
+
+@media (max-width:433px) {
+    .card-title {
+        font-size: 14px;
+    }
+
+    .conthead{
+        height: 35px;
+    }
+
+    .card-text {
+        font-size: 08px;
+    }
+
+    .btn,.bt1{
+        width: 78px;
+        font-size: 8px;
+    }
+}
+
+/* @media (max-width:400px){
+    .conthead{
+        height: 20px;
+    }
+} */
+
+@media (max-width:389px){
+    .card-title img{
+        width: 187px;
+        height: 200px;
+    }
+}

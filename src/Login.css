@@ -1,0 +1,35 @@
+.contai1{
+    width: 569px;
+    margin: auto;
+    margin-top: 130px;
+    margin-bottom: 200px;
+    color: white;
+    /* background-color: rgb(39, 40, 112);; */
+    padding: 64px;
+    height: 420px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    border-radius: 15px;
+}
+
+.contai1 h1{
+    color: black;
+    text-align: center;
+}
+
+@media (max-width:609px){
+    .contai1{
+        width: 404px;
+    }
+}
+
+@media (max-width:455px){
+    .contai1{
+        width: 315px;
+    }
+}
+
+@media (max-width:450px){
+    .contai1{
+        width: 275px;
+    }
+}
